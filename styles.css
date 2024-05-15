@@ -1,0 +1,118 @@
+body{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+h1{
+    margin: 3% 0 0 0;
+    text-align: center;
+}
+
+.title-line{
+    border: 3px solid orangered;
+    margin-bottom: 2.5%;
+    width: 5%;
+}
+
+#buttons-section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 3%;
+}
+
+button{
+    border: 2px solid orangered;
+    border-radius: 7.5px;
+    padding: 5px 10px 5px 10px;
+}
+
+#food-section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.food-div{
+    margin: 25px;
+}
+
+.name-div{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+img{
+    width: 250px;
+}
+
+.image:hover, button:hover{
+    cursor: pointer;
+}
+
+h3{
+    margin: 0 0 0 10px;
+}
+
+hr{
+    border: solid 1px lightgray;
+    width: 50%;
+}
+
+.hidden{
+    display: none;
+}
+
+@media (min-width: 580.05px) and (max-width: 3000px){
+
+    .title-line{
+        border: 2px solid orangered;
+        margin-bottom: 2.5%;
+        width: 7.5%;
+    }
+
+    .image{
+        border: solid 2px orangered;
+        border-radius: 5px;
+        float: left;
+        max-height: 170px;
+    }
+}
+
+@media (min-width: 70px) and (max-width: 580px) {
+
+    h1{
+        font-size: x-large;
+    }
+
+    .title-line{
+        border: 1px solid orangered;
+        margin-bottom: 5%;
+        width: 10%;
+    }
+
+    #buttons-section{
+        gap: 10px;
+    }
+
+    button{
+        padding: 2px 4px 2px 4px;
+        font-size: small;
+    }
+
+    .name-div, p{
+        font-size: small;
+    }
+
+    .image{
+        border: solid 2px orangered;
+        border-radius: 5px;
+        width: 100%;
+    }
+}
